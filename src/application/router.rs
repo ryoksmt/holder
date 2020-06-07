@@ -3,7 +3,7 @@ extern crate router;
 
 use router::Router;
 
-use crate::ctl::healthcheck_ctl::hello;
+use crate::controller::healthcheck_controller::*;
 
 pub fn routers() -> Router {
     let mut router = Router::new();

@@ -1,5 +1,8 @@
-mod app;
-mod ctl;
+mod application;
+mod controller;
+mod entity;
+mod usecase;
+mod repository;
 fn main() {
-    app::server::server()
+    application::server::server()
 }
