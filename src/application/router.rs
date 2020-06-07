@@ -7,6 +7,6 @@ use crate::controller::healthcheck_controller::*;
 
 pub fn routers() -> Router {
     let mut router = Router::new();
-    router.get("/", hello, "hello");
+    router.get("/", HealthcheckController::hello, "hello");
     return router
 }
